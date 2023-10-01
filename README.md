@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# React Form Wizard 🧙‍♂️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React Form Wizard](https://your-image-url-here.png)
 
-## Available Scripts
+## Overview 🌟
 
-In the project directory, you can run:
+The React Form Wizard is a simple yet powerful project that demonstrates how to create a multi-step form wizard using React, the `useForm` hook from the `react-hook-form` library, styled with SASS and Tailwind CSS, and written in TypeScript. 
 
-### `npm start`
+## Features 🚀
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Multi-step form wizard with a customizable number of steps.
+- Utilizes the `react-hook-form` library for efficient form handling and validation.
+- Styled using SASS and Tailwind CSS for a polished and responsive design.
+- Written in TypeScript for enhanced type safety.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started 🏁
 
-### `npm test`
+To get started with the React Form Wizard project, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository to your local machine:
 
-### `npm run build`
+   ```
+   git clone https://github.com/hermy1/react-form-wizard.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```
+   cd react-form-wizard
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the dependencies:
 
-### `npm run eject`
+   ```
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Start the development server:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+5. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to see the form wizard in action.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Dependencies 📦
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project relies on the following dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://reactjs.org/)
+- [react-hook-form](https://react-hook-form.com/)
+- [SASS](https://sass-lang.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+You can find detailed information about these dependencies and their versions in the `package.json` file.
+
+## Contributing 🤝
+
+Contributions are welcome!
+
+## Issues 🐞
+
+If you encounter any issues or have suggestions for improvement, please open an issue on the [GitHub repository](https://github.com/hermy1/react-form-wizard/issues).
