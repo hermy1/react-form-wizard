@@ -1,18 +1,28 @@
 import React from 'react'
 
-function Register() {
+
+type props = {
+  register: any,
+  handleSubmit: any,
+  next: any,
+  onSubmit: any,
+}
+
+function Register({register, handleSubmit, next, onSubmit}: props) {
+
   return (
 <div className="w-1/2 mx-auto">
   <p className="text-md mb-5 mt-8 text-center leading-tight text-gray-700">
  Register information 
   </p>
+  <form className="mb-6" onSubmit={handleSubmit(onSubmit)}>
   <div className="mb-6">
     <input
-      type="email"
-      placeholder="Email Address"
-      name="email"
+      type="username"
+      placeholder="Username"
+      name="username"
       className="w-full rounded-md border-2 border-solid border-gray-200 px-4 py-3 font-medium text-gray-700"
-    //   oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
+     {...register("username", { required: true })}
     />
   </div>
   <div className="mb-6">
@@ -21,7 +31,7 @@ function Register() {
       placeholder="Password"
       name="password"
       className="w-full rounded-md border-2 border-solid border-gray-200 px-4 py-3 font-medium text-gray-700"
-    //   oninput="this.className = 'w-full px-4 py-3 rounded-md text-gray-700 font-medium border-solid border-2 border-gray-200'"
+      {...register("password", { required: true })}
     />
   </div>
   <div className="mb-6">
@@ -30,9 +40,18 @@ function Register() {
       placeholder="Confirm Password"
       name="password"
       className="w-full rounded-md border-2 border-solid border-gray-200 px-4 py-3 font-medium text-gray-700"
-      
+      {...register("confirmPassword", { required: true })}
     />
   </div>
+  <button
+    type="submit"
+    className="w-full rounded-md bg-blue-500 text-white font-medium py-3"
+    // onClick={handleSubmit(next)}
+  >
+    Next
+
+  </button>
+</form>
 </div>
 
   )
