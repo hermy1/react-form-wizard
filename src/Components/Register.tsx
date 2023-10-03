@@ -8,7 +8,7 @@ type props = {
   onSubmit: any,
 }
 
-function Register({register, handleSubmit, next, onSubmit}: props) {
+function Register({register, handleSubmit, onSubmit}: props) {
 
   return (
 <div className="w-1/2 mx-auto">
